@@ -130,7 +130,7 @@ def optimal_flows_node(demands,
     # print objective
     flows = {(w, r): flow_vars[w, r].varValue for w in wells for r in refineries if flow_vars[w, r].varValue > 0}
     
-    print(pl.value(pb.objective))
+    print(f'TOTAL COST: {pl.value(pb.objective)}')
     print('Flows')
     for k, v in flows.items():
         print(f'{k[0]} --> {k[1]}  = {v}')
@@ -229,7 +229,7 @@ def optimal_flows_arc(demands,
     # print objective
     flows = {(w, r): flow_vars[w, r].varValue for w in wells for r in refineries if (w, r) in allowed_routes and flow_vars[w, r].varValue > 0}
     
-    print(pl.value(pb.objective))
+    print(f'TOTAL COST: {pl.value(pb.objective)}')
     print('Flows')
     for k, v in flows.items():
         print(f'{k[0]} --> {k[1]}  = {v}')
