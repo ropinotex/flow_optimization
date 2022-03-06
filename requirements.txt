@@ -1,5 +1,5 @@
 jupyter
-numpy==1.22.2
-openpyxl==3.0.9
-pandas==1.4.0
+numpy
+openpyxl
+pandas
 PuLP==2.6.0
