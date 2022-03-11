@@ -1,3 +1,14 @@
+# ==============================================================================
+# description     :Basic flow optimization model example
+# author          :Roberto Pinto
+# date            :2022.03.08
+# version         :1.0
+# notes           :This software is meant for teaching purpose only and it is provided as-is.
+#                  The model is inspired by the SlickOil case (https://slickoil.opexanalytics.com/).
+#                  All data has been taken from the case. 
+#                  The software is provided as-is, with no guarantee by the author.
+# ==============================================================================
+
 import pulp as pl
 from itertools import product
 
